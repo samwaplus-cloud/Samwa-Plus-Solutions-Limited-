@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -229,20 +230,49 @@
             font-weight: bold;
         }
 
-        /* CONTACT & HOURS */
+        /* CONTACT & ADDRESS */
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.2fr 0.8fr;
             gap: 40px;
         }
 
+        .info-box {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
         .info-box h3 {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: var(--primary);
+            text-transform: uppercase;
+            font-size: 18px;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 10px;
         }
 
         .info-box p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-box strong {
+            min-width: 100px;
+            display: inline-block;
+        }
+
+        .info-box a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .info-box a:hover {
+            text-decoration: underline;
         }
 
         /* FOOTER */
@@ -349,6 +379,21 @@
                     <li>Culverts</li>
                     <li>Concrete Works</li>
                 </ul>
+
+                 <!-- CONTACT SECTION -->
+    <section id="contact" style="background-color: #f3f4f6;">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <P>
+            <!-- Office Address Box -->
+            <div class="info-box">
+                <h3>Official Address</h3>
+                <p><strong>Company:</strong> SAMWA PLUS SOLUTIONS LIMITED</p>
+                <p><strong>P.O Box:</strong> P.O BOX 11660, 00200 - CITY SQUARE</p>
+                <p><strong>Location:</strong> Nairobi, Kenya</p>
+                <p><strong>Phone:</strong> <a href="tel: +254796258348">+254 796 258 348</a></p>
+                <p><strong>Email:</strong> <a href="mailto:samwaplus@gmail.com">samwaplus@gmail.com</a></p>
+            </div>
             </div>
 
             <!-- Category 3 -->
